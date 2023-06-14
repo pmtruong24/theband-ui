@@ -21,3 +21,13 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
 }
+
+button {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
+}

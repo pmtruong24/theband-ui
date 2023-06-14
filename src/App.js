@@ -1,10 +1,12 @@
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Header from '~/components/Layouts/Header';
+import Content from './components/Layouts/Content';
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello</h2>
+      <Header />
+
+      <Content />
     </div>
   );
 }
