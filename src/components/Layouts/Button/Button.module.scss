@@ -19,14 +19,20 @@
   margin-left: 4px;
 }
 
-.moreItemList {
+// header
+.more-item {
   display: block;
-  text-align: start;
-  text-transform: none;
-  font-size: 1.5rem;
-  width: 160px;
-  height: 38px;
   color: #000;
-  background-color: #fff;
+  // text-align: start;
+  text-transform: none;
+  min-width: 160px;
+  height: 38px;
   padding: 8px 16px;
+}
+
+.search-icon {
+  &:hover {
+    color: var(--text-color);
+    background-color: #f44336;
+  }
 }

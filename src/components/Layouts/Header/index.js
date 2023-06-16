@@ -1,18 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faSearch } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
 import styles from './Header.module.scss';
 import Button from '~/components/Layouts/Button';
 import PopperWrapper from '~/components/PopperWrapper';
-import MoreItem from './MoreItem';
+import MoreList from './MoreList';
 
 const cx = classNames.bind(styles);
 
 function Header() {
   return (
-    <header className={cx('header')}>
+    <header className={cx('wrapper')}>
       <div className={cx('inner')}>
         <div className={cx('navbar')}>
           <Button>Home</Button>
@@ -26,7 +26,7 @@ function Header() {
             render={(attrs) => (
               <div className={cx('more-result')} tabIndex="-1" {...attrs}>
                 <PopperWrapper>
-                  <MoreItem />
+                  <MoreList />
                 </PopperWrapper>
               </div>
             )}
@@ -36,6 +36,12 @@ function Header() {
               <FontAwesomeIcon className={cx('icon')} icon={faCaretDown} />
             </button>
           </Tippy>
+        </div>
+
+        <div className={cx('navbar-search')}>
+          <Button className={cx('search-icon')}>
+            <FontAwesomeIcon icon={faSearch} />
+          </Button>
         </div>
       </div>
     </header>

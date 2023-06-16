@@ -1,19 +1,33 @@
 import classNames from 'classnames/bind';
 import styles from './Button.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function Button({ children, rightIcon, moreItemList }) {
+function Button({ children, className, rightIcon, to, href, onClick }) {
+  let Comp = 'button';
+  const props = {
+    onClick,
+  };
+
+  if (to) {
+    props.to = to;
+    Comp = Link;
+  } else if (href) {
+    props.href = href;
+    Comp = 'a';
+  }
+
   const classes = cx('button', {
-    moreItemList,
+    [className]: className,
+    rightIcon,
   });
+
   return (
-    <button className={classes}>
+    <Comp className={classes} {...props}>
       <span className={cx('title')}>{children}</span>
       {rightIcon && <span className={cx('icon')}>{rightIcon}</span>}
-    </button>
+    </Comp>
   );
 }
 
