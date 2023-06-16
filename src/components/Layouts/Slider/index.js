@@ -5,13 +5,12 @@ const cx = classNames.bind(styles);
 
 function Slider() {
   return (
-    <div className={cx('wrapper')}>
-      <div className={cx('content')}>
-        <h2 className={cx('title')}>Chicago</h2>
-        <p className={cx('paragraph')}>
-          Thank you, Chicago - A night we won't forget.
-        </p>
-      </div>
+    <div className={cx('slider')}>
+      <img
+        className={cx('image')}
+        src="https://www.w3schools.com/w3images/chicago.jpg"
+        alt="chicago"
+      />
     </div>
   );
 }

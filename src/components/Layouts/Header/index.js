@@ -12,7 +12,7 @@ const cx = classNames.bind(styles);
 
 function Header() {
   return (
-    <header className={cx('wrapper')}>
+    <header className={cx('header')}>
       <div className={cx('inner')}>
         <div className={cx('navbar')}>
           <Button>Home</Button>

@@ -1,33 +1,13 @@
-.wrapper {
-  position: relative;
-  background: url('https://www.w3schools.com/w3images/chicago.jpg') top center /
-    cover no-repeat;
-  min-height: 630px;
-}
-
 .slider {
+  // background: url('https://www.w3schools.com/w3images/chicago.jpg') top center /
+  // cover no-repeat;
 }
 
-.content {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: var(--text-color);
-  padding: 32px 16px;
-}
-
-.title {
-  font-size: 2.4rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
-
-.paragraph {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1;
-  margin: 15px 0;
+.image {
+  position: relative;
+  margin-top: 46px;
+  width: 100%;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

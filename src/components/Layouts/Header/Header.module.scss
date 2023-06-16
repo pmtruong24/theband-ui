@@ -1,6 +1,8 @@
 .inner {
   display: inline-flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
   width: 100%;
   height: 46px;
   background-color: #000;

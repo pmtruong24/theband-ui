@@ -1,4 +1,30 @@
 .wrapper {
-  width: 100%;
+  max-width: 800px;
   min-height: 500px;
+  padding: 64px 16px;
+  margin-top: -6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+
+.sub-heading {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  margin: 15px 0;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 1.5rem;
+  margin: 15px 0;
 }
