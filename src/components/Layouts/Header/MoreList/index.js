@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './MoreList.module.scss';
-import Button from '../../Button';
+import Button from '~/components/Layouts/Button';
 
 const cx = classNames.bind(styles);
 

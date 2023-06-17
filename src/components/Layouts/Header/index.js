@@ -15,10 +15,10 @@ function Header() {
     <header className={cx('header')}>
       <div className={cx('inner')}>
         <div className={cx('navbar')}>
-          <Button>Home</Button>
-          <Button>Band</Button>
-          <Button>Tour</Button>
-          <Button>Contact</Button>
+          <Button navBar>Home</Button>
+          <Button navBar>Band</Button>
+          <Button navBar>Tour</Button>
+          <Button navBar>Contact</Button>
 
           <Tippy
             interactive

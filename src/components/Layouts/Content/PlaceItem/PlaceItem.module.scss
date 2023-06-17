@@ -1,0 +1,33 @@
+.place-item {
+  color: #000;
+}
+
+.image {
+  width: 100%;
+  padding: 0 8px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.info {
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 0 16px 16px 16px;
+  margin: -6px 8px 0 8px;
+}
+
+.title {
+  font-size: 1.6rem;
+  padding: 15px 0;
+}
+
+.time {
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+
+.description {
+  margin-bottom: 15px;
+}
