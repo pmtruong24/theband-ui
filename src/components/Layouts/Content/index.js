@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Content.module.scss';
+import MemberItem from './MemberItem';
 
 const cx = classNames.bind(styles);
 
@@ -22,6 +23,12 @@ function Content() {
           nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.
         </p>
+
+        <div className={cx('members')}>
+          <MemberItem />
+          <MemberItem />
+          <MemberItem />
+        </div>
       </div>
 
       <div className={cx('wrapper', 'the-band')}>
