@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.icon {
+  font-size: 1.6rem;
+  width: 30px;
+  margin-right: 6px;
+}
+
+.form-name,
+.form-email,
+.form-message {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-name {
+  margin-right: 4px;
+}
+
+.form-email {
+  margin-left: 4px;
+}
+
+.form-message {
+  width: 100%;
+  margin-top: 8px;
+}

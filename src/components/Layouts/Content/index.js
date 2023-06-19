@@ -3,6 +3,7 @@ import styles from './Content.module.scss';
 import AboutBand from './AboutBand';
 import TourDates from './TourDates';
 import Contact from './Contact';
+import Map from './Map';
 
 const cx = classNames.bind(styles);
 
@@ -16,6 +17,8 @@ function Content() {
       </div>
 
       <Contact />
+
+      <Map />
     </div>
   );
 }

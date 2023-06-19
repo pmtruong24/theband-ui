@@ -11,6 +11,7 @@ function Button({
   navBar,
   soldOut,
   buyTickets,
+  send,
   to,
   href,
   onClick,
@@ -34,6 +35,7 @@ function Button({
     navBar,
     soldOut,
     buyTickets,
+    send,
   });
 
   return (
